@@ -28,6 +28,8 @@ jobs:
     steps:
     - uses: zendesk/checkout@v2
     - uses: zendesk/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.rvm }}
     - name: gem_cache
       id: cache
       uses: zendesk/cache@v2
