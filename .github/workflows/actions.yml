@@ -18,8 +18,9 @@ jobs:
         - 2.4
         - 2.5
         - 2.6
-        - jruby-9.1.17.0
         include:
+        - rvm: jruby-9.1.17.0
+          allow_failures: true
         - rvm: jruby-head
           allow_failures: true
         - rvm: head
